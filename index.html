@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bene & Iga Recipes</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8f5ef;
+        --surface: #fffdfa;
+        --surface-strong: #fff8ec;
+        --ink: #20211d;
+        --muted: #6f7068;
+        --line: #ded7ca;
+        --accent: #267064;
+        --accent-strong: #174c44;
+        --tomato: #bf4e3a;
+        --gold: #d39a2c;
+        --shadow: 0 18px 50px rgba(42, 35, 22, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 14% 8%, rgba(211, 154, 44, 0.18), transparent 28rem),
+          linear-gradient(135deg, #f8f5ef 0%, #eef4ef 48%, #f8f1e5 100%);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .app {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: auto;
+        padding: 28px;
+        border-right: 1px solid rgba(32, 33, 29, 0.12);
+        background: rgba(255, 253, 250, 0.78);
+        backdrop-filter: blur(18px);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 44px;
+        height: 44px;
+        place-items: center;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #fff;
+        font-size: 24px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.3rem;
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        margin: 3px 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .search {
+        width: 100%;
+        min-height: 44px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        color: var(--ink);
+        font: inherit;
+        outline: none;
+      }
+
+      .search:focus {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(38, 112, 100, 0.16);
+      }
+
+      .filter-group {
+        margin-top: 22px;
+      }
+
+      .filter-title {
+        margin: 0 0 8px;
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .chip {
+        min-height: 34px;
+        padding: 6px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--ink);
+        cursor: pointer;
+        font: inherit;
+        font-size: 0.92rem;
+      }
+
+      .chip[aria-pressed="true"] {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .main {
+        min-width: 0;
+        padding: 30px clamp(20px, 5vw, 64px) 48px;
+      }
+
+      .toolbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .count {
+        color: var(--muted);
+        font-weight: 700;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(220px, 320px) minmax(0, 820px);
+        gap: 24px;
+        align-items: start;
+      }
+
+      .recipe-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .recipe-button {
+        width: 100%;
+        min-height: 88px;
+        padding: 14px;
+        border: 1px solid rgba(32, 33, 29, 0.1);
+        border-radius: 8px;
+        background: rgba(255, 253, 250, 0.9);
+        color: var(--ink);
+        text-align: left;
+        cursor: pointer;
+        box-shadow: 0 8px 24px rgba(42, 35, 22, 0.07);
+      }
+
+      .recipe-button:hover,
+      .recipe-button[aria-selected="true"] {
+        border-color: rgba(38, 112, 100, 0.52);
+        background: var(--surface-strong);
+      }
+
+      .recipe-title {
+        display: block;
+        font-weight: 850;
+        line-height: 1.2;
+      }
+
+      .recipe-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 10px;
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 0.86rem;
+      }
+
+      .recipe-detail {
+        overflow: hidden;
+        border: 1px solid rgba(32, 33, 29, 0.11);
+        border-radius: 8px;
+        background: rgba(255, 253, 250, 0.94);
+        box-shadow: var(--shadow);
+      }
+
+      .detail-header {
+        padding: clamp(22px, 4vw, 34px);
+        background:
+          linear-gradient(135deg, rgba(38, 112, 100, 0.12), rgba(191, 78, 58, 0.1)),
+          var(--surface-strong);
+        border-bottom: 1px solid rgba(32, 33, 29, 0.1);
+      }
+
+      .detail-header h2 {
+        margin: 0;
+        font-size: clamp(1.8rem, 4vw, 3.1rem);
+        line-height: 1.04;
+        letter-spacing: 0;
+      }
+
+      .detail-facts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .fact {
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.74);
+        color: var(--accent-strong);
+        font-size: 0.9rem;
+        font-weight: 750;
+      }
+
+      .detail-body {
+        padding: clamp(22px, 4vw, 36px);
+      }
+
+      .detail-body h3 {
+        margin: 30px 0 10px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        font-size: 1.15rem;
+      }
+
+      .detail-body h3:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: 0;
+      }
+
+      .detail-body ul,
+      .detail-body ol {
+        padding-left: 1.25rem;
+      }
+
+      .detail-body li {
+        margin: 0.45rem 0;
+      }
+
+      .detail-body p {
+        margin: 0.75rem 0;
+      }
+
+      .source {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.88rem;
+      }
+
+      .empty {
+        padding: 24px;
+        border: 1px dashed var(--line);
+        border-radius: 8px;
+        background: rgba(255, 253, 250, 0.72);
+        color: var(--muted);
+      }
+
+      @media (max-width: 900px) {
+        .app {
+          display: block;
+        }
+
+        .sidebar {
+          position: static;
+          height: auto;
+          padding: 18px;
+          border-right: 0;
+          border-bottom: 1px solid rgba(32, 33, 29, 0.12);
+        }
+
+        .layout {
+          grid-template-columns: 1fr;
+        }
+
+        .recipe-list {
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+      }
+
+      @media (max-width: 560px) {
+        .main {
+          padding: 18px 14px 36px;
+        }
+
+        .toolbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .recipe-list {
+          grid-template-columns: 1fr;
+        }
+
+        .brand-mark {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">🍳</div>
+          <div>
+            <h1>Bene & Iga Recipes</h1>
+            <p class="subtitle">Markdown-Rezepte, schnell durchsuchbar.</p>
+          </div>
+        </div>
+
+        <input
+          id="search"
+          class="search"
+          type="search"
+          autocomplete="off"
+          placeholder="Suchen: Pasta, Tofu, quick..."
+        />
+
+        <div class="filter-group">
+          <p class="filter-title">Kategorie</p>
+          <div id="categoryFilters" class="chips"></div>
+        </div>
+
+        <div class="filter-group">
+          <p class="filter-title">Tags</p>
+          <div id="tagFilters" class="chips"></div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="toolbar">
+          <div>
+            <strong>Rezepte</strong>
+            <span id="count" class="count"></span>
+          </div>
+          <span id="activeFilter" class="count"></span>
+        </div>
+
+        <div class="layout">
+          <section id="recipeList" class="recipe-list" aria-label="Rezepte"></section>
+          <article id="recipeDetail" class="recipe-detail" aria-live="polite"></article>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const state = {
+        recipes: [],
+        query: "",
+        category: "all",
+        tag: "all",
+        selectedSlug: "",
+      };
+
+      const els = {
+        search: document.querySelector("#search"),
+        categoryFilters: document.querySelector("#categoryFilters"),
+        tagFilters: document.querySelector("#tagFilters"),
+        recipeList: document.querySelector("#recipeList"),
+        recipeDetail: document.querySelector("#recipeDetail"),
+        count: document.querySelector("#count"),
+        activeFilter: document.querySelector("#activeFilter"),
+      };
+
+      const labels = {
+        breakfast: "Frühstück",
+        lunch: "Lunch",
+        dinner: "Dinner",
+        snacks: "Snacks",
+        baking: "Backen",
+        sides: "Beilagen",
+      };
+
+      function pretty(value) {
+        return labels[value] || value.replace(/-/g, " ");
+      }
+
+      function metaParts(recipe) {
+        return [
+          pretty(recipe.category),
+          recipe.prepTime && `Prep ${recipe.prepTime}`,
+          recipe.cookTime && `Cook ${recipe.cookTime}`,
+          recipe.serves,
+        ].filter(Boolean);
+      }
+
+      function chip(container, label, value, current, onClick) {
+        const button = document.createElement("button");
+        button.className = "chip";
+        button.type = "button";
+        button.textContent = label;
+        button.setAttribute("aria-pressed", String(value === current));
+        button.addEventListener("click", () => onClick(value));
+        container.appendChild(button);
+      }
+
+      function renderFilters(data) {
+        els.categoryFilters.innerHTML = "";
+        els.tagFilters.innerHTML = "";
+
+        chip(els.categoryFilters, "Alle", "all", state.category, (value) => {
+          state.category = value;
+          render();
+        });
+        data.categories.forEach((category) =>
+          chip(els.categoryFilters, pretty(category), category, state.category, (value) => {
+            state.category = value;
+            render();
+          }),
+        );
+
+        chip(els.tagFilters, "Alle", "all", state.tag, (value) => {
+          state.tag = value;
+          render();
+        });
+        data.tags.slice(0, 18).forEach((tag) =>
+          chip(els.tagFilters, `#${tag}`, tag, state.tag, (value) => {
+            state.tag = value;
+            render();
+          }),
+        );
+      }
+
+      function filteredRecipes() {
+        const query = state.query.trim().toLowerCase();
+        return state.recipes.filter((recipe) => {
+          const categoryMatch = state.category === "all" || recipe.category === state.category;
+          const tagMatch = state.tag === "all" || recipe.tags.includes(state.tag);
+          const queryMatch = !query || recipe.searchText.includes(query);
+          return categoryMatch && tagMatch && queryMatch;
+        });
+      }
+
+      function renderList(recipes) {
+        els.recipeList.innerHTML = "";
+        recipes.forEach((recipe) => {
+          const button = document.createElement("button");
+          button.className = "recipe-button";
+          button.type = "button";
+          button.setAttribute("aria-selected", String(recipe.slug === state.selectedSlug));
+          button.innerHTML = `
+            <span class="recipe-title">${recipe.title}</span>
+            <span class="recipe-meta">${metaParts(recipe)
+              .map((part) => `<span>${part}</span>`)
+              .join("")}</span>
+          `;
+          button.addEventListener("click", () => {
+            state.selectedSlug = recipe.slug;
+            render();
+          });
+          els.recipeList.appendChild(button);
+        });
+      }
+
+      function renderDetail(recipe) {
+        if (!recipe) {
+          els.recipeDetail.className = "empty";
+          els.recipeDetail.innerHTML = "Kein Rezept gefunden. Filter lockern oder Suche ändern.";
+          return;
+        }
+
+        els.recipeDetail.className = "recipe-detail";
+        const facts = [
+          pretty(recipe.category),
+          recipe.cuisine,
+          recipe.prepTime && `Prep ${recipe.prepTime}`,
+          recipe.cookTime && `Cook ${recipe.cookTime}`,
+          recipe.serves,
+          recipe.diet,
+        ].filter(Boolean);
+
+        els.recipeDetail.innerHTML = `
+          <header class="detail-header">
+            <h2>${recipe.title}</h2>
+            <div class="detail-facts">
+              ${facts.map((fact) => `<span class="fact">${fact}</span>`).join("")}
+            </div>
+          </header>
+          <div class="detail-body">
+            ${recipe.html}
+            <p class="source">Quelle: <code>${recipe.sourcePath}</code></p>
+          </div>
+        `;
+      }
+
+      function render() {
+        renderFilters(window.recipeData);
+        const recipes = filteredRecipes();
+        if (!recipes.some((recipe) => recipe.slug === state.selectedSlug)) {
+          state.selectedSlug = recipes[0]?.slug || "";
+        }
+        els.count.textContent = `(${recipes.length}/${state.recipes.length})`;
+        els.activeFilter.textContent = [
+          state.category !== "all" && pretty(state.category),
+          state.tag !== "all" && `#${state.tag}`,
+        ]
+          .filter(Boolean)
+          .join(" · ");
+        renderList(recipes);
+        renderDetail(recipes.find((recipe) => recipe.slug === state.selectedSlug));
+      }
+
+      async function init() {
+        const response = await fetch("recipes.json", { cache: "no-store" });
+        window.recipeData = await response.json();
+        state.recipes = window.recipeData.recipes;
+        state.selectedSlug = state.recipes[0]?.slug || "";
+        els.search.addEventListener("input", (event) => {
+          state.query = event.target.value;
+          render();
+        });
+        render();
+      }
+
+      init().catch((error) => {
+        els.recipeDetail.className = "empty";
+        els.recipeDetail.textContent = `Konnte Rezepte nicht laden: ${error.message}`;
+      });
+    </script>
+  </body>
+</html>
