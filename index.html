@@ -34,6 +34,7 @@
           Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
           sans-serif;
         line-height: 1.5;
+        overflow-x: hidden;
       }
 
       a {
@@ -109,13 +110,38 @@
         margin-top: 22px;
       }
 
+      .filter-group summary {
+        list-style: none;
+        cursor: pointer;
+      }
+
+      .filter-group summary::-webkit-details-marker {
+        display: none;
+      }
+
       .filter-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
         margin: 0 0 8px;
         color: var(--muted);
         font-size: 0.78rem;
         font-weight: 800;
         letter-spacing: 0.08em;
         text-transform: uppercase;
+      }
+
+      .filter-title::after {
+        content: "⌄";
+        color: var(--accent);
+        font-size: 1rem;
+        line-height: 1;
+        transition: transform 0.18s ease;
+      }
+
+      .filter-group[open] .filter-title::after {
+        transform: rotate(180deg);
       }
 
       .chips {
@@ -183,6 +209,13 @@
         text-align: left;
         cursor: pointer;
         box-shadow: 0 8px 24px rgba(42, 35, 22, 0.07);
+      }
+
+      .recipe-button:focus-visible,
+      .chip:focus-visible,
+      .search:focus-visible {
+        outline: 3px solid rgba(38, 112, 100, 0.22);
+        outline-offset: 2px;
       }
 
       .recipe-button:hover,
@@ -297,37 +330,140 @@
         .sidebar {
           position: static;
           height: auto;
-          padding: 18px;
+          padding: 16px;
           border-right: 0;
           border-bottom: 1px solid rgba(32, 33, 29, 0.12);
+          background: rgba(255, 253, 250, 0.94);
+          backdrop-filter: none;
         }
 
         .layout {
-          grid-template-columns: 1fr;
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
         }
 
         .recipe-list {
-          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          display: grid;
+          grid-auto-flow: column;
+          grid-auto-columns: minmax(230px, 78vw);
+          gap: 12px;
+          margin: 0 -20px;
+          padding: 2px 20px 12px;
+          overflow-x: auto;
+          overscroll-behavior-x: contain;
+          scroll-padding-inline: 20px;
+          scroll-snap-type: x mandatory;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .recipe-button {
+          min-height: 112px;
+          scroll-snap-align: start;
         }
       }
 
       @media (max-width: 560px) {
+        body {
+          background: linear-gradient(180deg, #fffdfa 0%, #eef4ef 54%, #f8f1e5 100%);
+        }
+
+        .brand {
+          margin-bottom: 14px;
+        }
+
+        h1 {
+          font-size: 1.12rem;
+        }
+
+        .subtitle {
+          font-size: 0.82rem;
+        }
+
+        .search {
+          min-height: 46px;
+        }
+
+        .filter-group {
+          margin-top: 14px;
+        }
+
+        .filter-group:not([open]) {
+          margin-top: 10px;
+        }
+
+        .chips {
+          padding-bottom: 2px;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .chip {
+          flex: 0 0 auto;
+          white-space: nowrap;
+        }
+
         .main {
-          padding: 18px 14px 36px;
+          padding: 16px 14px 36px;
         }
 
         .toolbar {
+          position: sticky;
+          top: 0;
+          z-index: 2;
           align-items: flex-start;
           flex-direction: column;
-        }
-
-        .recipe-list {
-          grid-template-columns: 1fr;
+          gap: 4px;
+          margin: 0 -14px 14px;
+          padding: 10px 14px;
+          border-bottom: 1px solid rgba(32, 33, 29, 0.1);
+          background: rgba(248, 245, 239, 0.94);
+          backdrop-filter: blur(12px);
         }
 
         .brand-mark {
           width: 40px;
           height: 40px;
+        }
+
+        .recipe-list {
+          grid-auto-columns: minmax(216px, 84vw);
+          margin-inline: -14px;
+          padding-inline: 14px;
+          scroll-padding-inline: 14px;
+        }
+
+        .recipe-title {
+          font-size: 0.98rem;
+        }
+
+        .recipe-meta {
+          font-size: 0.78rem;
+        }
+
+        .detail-header h2 {
+          font-size: 1.65rem;
+        }
+
+        .detail-header,
+        .detail-body {
+          padding: 20px 16px;
+        }
+
+        .detail-facts {
+          gap: 7px;
+          margin-top: 14px;
+        }
+
+        .fact {
+          padding: 6px 9px;
+          font-size: 0.82rem;
+        }
+
+        .detail-body ul,
+        .detail-body ol {
+          padding-left: 1.1rem;
         }
       }
     </style>
@@ -351,15 +487,15 @@
           placeholder="Suchen: Pasta, Tofu, quick..."
         />
 
-        <div class="filter-group">
-          <p class="filter-title">Kategorie</p>
+        <details class="filter-group" open>
+          <summary class="filter-title">Kategorie</summary>
           <div id="categoryFilters" class="chips"></div>
-        </div>
+        </details>
 
-        <div class="filter-group">
-          <p class="filter-title">Tags</p>
+        <details class="filter-group" open>
+          <summary class="filter-title">Tags</summary>
           <div id="tagFilters" class="chips"></div>
-        </div>
+        </details>
       </aside>
 
       <main class="main">
@@ -482,6 +618,9 @@
           button.addEventListener("click", () => {
             state.selectedSlug = recipe.slug;
             render();
+            if (window.matchMedia("(max-width: 900px)").matches) {
+              els.recipeDetail.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
           });
           els.recipeList.appendChild(button);
         });
@@ -540,6 +679,14 @@
         window.recipeData = await response.json();
         state.recipes = window.recipeData.recipes;
         state.selectedSlug = state.recipes[0]?.slug || "";
+        const mobileQuery = window.matchMedia("(max-width: 560px)");
+        const syncFilterState = () => {
+          document.querySelectorAll(".filter-group").forEach((group) => {
+            group.open = !mobileQuery.matches;
+          });
+        };
+        syncFilterState();
+        mobileQuery.addEventListener("change", syncFilterState);
         els.search.addEventListener("input", (event) => {
           state.query = event.target.value;
           render();
