@@ -24,6 +24,10 @@
         box-sizing: border-box;
       }
 
+      html {
+        overflow-x: clip;
+      }
+
       body {
         margin: 0;
         background:
@@ -42,6 +46,8 @@
       }
 
       .app {
+        width: 100%;
+        max-width: 100%;
         min-height: 100vh;
         display: grid;
         grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
@@ -170,6 +176,7 @@
 
       .main {
         min-width: 0;
+        max-width: 100%;
         padding: 30px clamp(20px, 5vw, 64px) 48px;
       }
 
@@ -187,6 +194,8 @@
       }
 
       .layout {
+        min-width: 0;
+        max-width: 100%;
         display: grid;
         grid-template-columns: minmax(220px, 320px) minmax(0, 820px);
         gap: 24px;
@@ -194,6 +203,8 @@
       }
 
       .recipe-list {
+        min-width: 0;
+        max-width: 100%;
         display: grid;
         gap: 10px;
       }
@@ -240,11 +251,14 @@
       }
 
       .recipe-detail {
+        min-width: 0;
+        max-width: 100%;
         overflow: hidden;
         border: 1px solid rgba(32, 33, 29, 0.11);
         border-radius: 8px;
         background: rgba(255, 253, 250, 0.94);
         box-shadow: var(--shadow);
+        overflow-wrap: anywhere;
       }
 
       .detail-header {
@@ -344,20 +358,21 @@
         }
 
         .recipe-list {
-          display: grid;
-          grid-auto-flow: column;
-          grid-auto-columns: minmax(230px, 78vw);
+          width: 100%;
+          display: flex;
           gap: 12px;
-          margin: 0 -20px;
-          padding: 2px 20px 12px;
+          margin: 0;
+          padding: 2px 0 12px;
           overflow-x: auto;
           overscroll-behavior-x: contain;
-          scroll-padding-inline: 20px;
+          scroll-padding-inline: 0;
           scroll-snap-type: x mandatory;
           -webkit-overflow-scrolling: touch;
         }
 
         .recipe-button {
+          flex: 0 0 min(78vw, 320px);
+          width: auto;
           min-height: 112px;
           scroll-snap-align: start;
         }
@@ -393,6 +408,7 @@
         }
 
         .chips {
+          max-width: 100%;
           padding-bottom: 2px;
           flex-wrap: nowrap;
           overflow-x: auto;
@@ -428,10 +444,12 @@
         }
 
         .recipe-list {
-          grid-auto-columns: minmax(216px, 84vw);
-          margin-inline: -14px;
-          padding-inline: 14px;
-          scroll-padding-inline: 14px;
+          padding-inline: 0;
+          scroll-padding-inline: 0;
+        }
+
+        .recipe-button {
+          flex-basis: min(78vw, 280px);
         }
 
         .recipe-title {
