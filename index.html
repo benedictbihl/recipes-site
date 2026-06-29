@@ -24,6 +24,10 @@
         box-sizing: border-box;
       }
 
+      html {
+        overflow-x: clip;
+      }
+
       body {
         margin: 0;
         background:
@@ -34,6 +38,7 @@
           Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
           sans-serif;
         line-height: 1.5;
+        overflow-x: hidden;
       }
 
       a {
@@ -41,6 +46,8 @@
       }
 
       .app {
+        width: 100%;
+        max-width: 100%;
         min-height: 100vh;
         display: grid;
         grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
@@ -109,13 +116,38 @@
         margin-top: 22px;
       }
 
+      .filter-group summary {
+        list-style: none;
+        cursor: pointer;
+      }
+
+      .filter-group summary::-webkit-details-marker {
+        display: none;
+      }
+
       .filter-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
         margin: 0 0 8px;
         color: var(--muted);
         font-size: 0.78rem;
         font-weight: 800;
         letter-spacing: 0.08em;
         text-transform: uppercase;
+      }
+
+      .filter-title::after {
+        content: "⌄";
+        color: var(--accent);
+        font-size: 1rem;
+        line-height: 1;
+        transition: transform 0.18s ease;
+      }
+
+      .filter-group[open] .filter-title::after {
+        transform: rotate(180deg);
       }
 
       .chips {
@@ -144,6 +176,7 @@
 
       .main {
         min-width: 0;
+        max-width: 100%;
         padding: 30px clamp(20px, 5vw, 64px) 48px;
       }
 
@@ -161,6 +194,8 @@
       }
 
       .layout {
+        min-width: 0;
+        max-width: 100%;
         display: grid;
         grid-template-columns: minmax(220px, 320px) minmax(0, 820px);
         gap: 24px;
@@ -168,6 +203,8 @@
       }
 
       .recipe-list {
+        min-width: 0;
+        max-width: 100%;
         display: grid;
         gap: 10px;
       }
@@ -183,6 +220,13 @@
         text-align: left;
         cursor: pointer;
         box-shadow: 0 8px 24px rgba(42, 35, 22, 0.07);
+      }
+
+      .recipe-button:focus-visible,
+      .chip:focus-visible,
+      .search:focus-visible {
+        outline: 3px solid rgba(38, 112, 100, 0.22);
+        outline-offset: 2px;
       }
 
       .recipe-button:hover,
@@ -207,11 +251,14 @@
       }
 
       .recipe-detail {
+        min-width: 0;
+        max-width: 100%;
         overflow: hidden;
         border: 1px solid rgba(32, 33, 29, 0.11);
         border-radius: 8px;
         background: rgba(255, 253, 250, 0.94);
         box-shadow: var(--shadow);
+        overflow-wrap: anywhere;
       }
 
       .detail-header {
@@ -297,37 +344,144 @@
         .sidebar {
           position: static;
           height: auto;
-          padding: 18px;
+          padding: 16px;
           border-right: 0;
           border-bottom: 1px solid rgba(32, 33, 29, 0.12);
+          background: rgba(255, 253, 250, 0.94);
+          backdrop-filter: none;
         }
 
         .layout {
-          grid-template-columns: 1fr;
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
         }
 
         .recipe-list {
-          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          width: 100%;
+          display: flex;
+          gap: 12px;
+          margin: 0;
+          padding: 2px 0 12px;
+          overflow-x: auto;
+          overscroll-behavior-x: contain;
+          scroll-padding-inline: 0;
+          scroll-snap-type: x mandatory;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .recipe-button {
+          flex: 0 0 min(78vw, 320px);
+          width: auto;
+          min-height: 112px;
+          scroll-snap-align: start;
         }
       }
 
       @media (max-width: 560px) {
+        body {
+          background: linear-gradient(180deg, #fffdfa 0%, #eef4ef 54%, #f8f1e5 100%);
+        }
+
+        .brand {
+          margin-bottom: 14px;
+        }
+
+        h1 {
+          font-size: 1.12rem;
+        }
+
+        .subtitle {
+          font-size: 0.82rem;
+        }
+
+        .search {
+          min-height: 46px;
+        }
+
+        .filter-group {
+          margin-top: 14px;
+        }
+
+        .filter-group:not([open]) {
+          margin-top: 10px;
+        }
+
+        .chips {
+          max-width: 100%;
+          padding-bottom: 2px;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .chip {
+          flex: 0 0 auto;
+          white-space: nowrap;
+        }
+
         .main {
-          padding: 18px 14px 36px;
+          padding: 16px 14px 36px;
         }
 
         .toolbar {
+          position: sticky;
+          top: 0;
+          z-index: 2;
           align-items: flex-start;
           flex-direction: column;
-        }
-
-        .recipe-list {
-          grid-template-columns: 1fr;
+          gap: 4px;
+          margin: 0 -14px 14px;
+          padding: 10px 14px;
+          border-bottom: 1px solid rgba(32, 33, 29, 0.1);
+          background: rgba(248, 245, 239, 0.94);
+          backdrop-filter: blur(12px);
         }
 
         .brand-mark {
           width: 40px;
           height: 40px;
+        }
+
+        .recipe-list {
+          padding-inline: 0;
+          scroll-padding-inline: 0;
+        }
+
+        .recipe-button {
+          flex-basis: min(78vw, 280px);
+        }
+
+        .recipe-title {
+          font-size: 0.98rem;
+        }
+
+        .recipe-meta {
+          font-size: 0.78rem;
+        }
+
+        .detail-header h2 {
+          font-size: 1.65rem;
+        }
+
+        .detail-header,
+        .detail-body {
+          padding: 20px 16px;
+        }
+
+        .detail-facts {
+          gap: 7px;
+          margin-top: 14px;
+        }
+
+        .fact {
+          padding: 6px 9px;
+          font-size: 0.82rem;
+        }
+
+        .detail-body ul,
+        .detail-body ol {
+          padding-left: 1.1rem;
         }
       }
     </style>
@@ -351,15 +505,15 @@
           placeholder="Suchen: Pasta, Tofu, quick..."
         />
 
-        <div class="filter-group">
-          <p class="filter-title">Kategorie</p>
+        <details class="filter-group" open>
+          <summary class="filter-title">Kategorie</summary>
           <div id="categoryFilters" class="chips"></div>
-        </div>
+        </details>
 
-        <div class="filter-group">
-          <p class="filter-title">Tags</p>
+        <details class="filter-group" open>
+          <summary class="filter-title">Tags</summary>
           <div id="tagFilters" class="chips"></div>
-        </div>
+        </details>
       </aside>
 
       <main class="main">
@@ -482,6 +636,9 @@
           button.addEventListener("click", () => {
             state.selectedSlug = recipe.slug;
             render();
+            if (window.matchMedia("(max-width: 900px)").matches) {
+              els.recipeDetail.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
           });
           els.recipeList.appendChild(button);
         });
@@ -540,6 +697,14 @@
         window.recipeData = await response.json();
         state.recipes = window.recipeData.recipes;
         state.selectedSlug = state.recipes[0]?.slug || "";
+        const mobileQuery = window.matchMedia("(max-width: 560px)");
+        const syncFilterState = () => {
+          document.querySelectorAll(".filter-group").forEach((group) => {
+            group.open = !mobileQuery.matches;
+          });
+        };
+        syncFilterState();
+        mobileQuery.addEventListener("change", syncFilterState);
         els.search.addEventListener("input", (event) => {
           state.query = event.target.value;
           render();
