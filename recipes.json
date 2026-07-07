@@ -1,10 +1,11 @@
 {
   "generatedAt": "build-time",
-  "recipeCount": 13,
+  "recipeCount": 15,
   "categories": [
     "breakfast",
     "dinner",
-    "lunch"
+    "lunch",
+    "recipes"
   ],
   "tags": [
     "beans",
@@ -13,6 +14,7 @@
     "bonappetit",
     "bowl",
     "breakfast",
+    "brokkoli",
     "buttermilk",
     "champignons",
     "chili",
@@ -25,6 +27,7 @@
     "halloumi",
     "hellofresh-adapted",
     "hirtenkaese",
+    "italian-ish",
     "kale",
     "kohl",
     "lentils",
@@ -33,6 +36,7 @@
     "mushrooms",
     "nudelsalat",
     "ofen",
+    "orecchiette",
     "orzo",
     "oven",
     "pancakes",
@@ -52,6 +56,7 @@
     "stew",
     "tofu",
     "vegan",
+    "vegane-chorizo",
     "vegetarian",
     "weeknight",
     "zucchini",
@@ -159,6 +164,28 @@
       "sourcePath": "recipes/dinner/maultaschen-auflauf-spinat.md",
       "html": "<p><strong>Category:</strong> dinner</p>\n<p><strong>Cuisine:</strong> German / Swabian</p>\n<p><strong>Prep time:</strong> 30 min</p>\n<p><strong>Cook time:</strong> 20 min</p>\n<p><strong>Serves:</strong> 4 people</p>\n<p><strong>Diet:</strong> Vegetarian 🌱</p>\n<h3>Ingredients</h3>\n<ul>\n<li>500g frozen spinach (tiefgefrorener Spinat)</li>\n<li>720g vegetarian Swabian maultaschen (schwäbische Gemüsemaultaschen)</li>\n<li>250g herb cream cheese (Kräuter-Creme fraîche)</li>\n<li>125g mozzarella</li>\n<li>1 onion</li>\n<li>Butter or oil</li>\n<li>Salt &amp; pepper</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li><strong>Thaw spinach</strong> — Let frozen spinach thaw</li>\n<li><strong>Prep onion &amp; cheese</strong> — Peel and dice onion; slice mozzarella into sheets</li>\n<li><strong>Layer in baking dish</strong> — Arrange maultaschen and spinach in baking dish, top with herb cream, then mozzarella</li>\n<li><strong>Bake</strong> — 180°C (E-Herd 200°C) for ~20 minutes until golden</li>\n</ol>\n<h3>Nutrition</h3>\n<ul>\n<li>~470 kcal per portion</li>\n<li>High protein (maultaschen)</li>\n</ul>\n<h3>Notes</h3>\n<ul>\n<li>Quick weeknight dinner — only 4 basic ingredients to buy</li>\n<li><strong>Must use vegetable-based maultaschen</strong> (Bürger Gemüsemaultaschen or similar)</li>\n<li>Can add more herbs to taste</li>\n</ul>\n<h3>Tags</h3>\n<p>#schwäbisch #comfort-food #quick #vegetarian</p>",
       "searchText": "maultaschen-auflauf mit spinat dinner german / swabian vegetarian 🌱 comfort-food quick schwäbisch vegetarian   maultaschen auflauf mit spinat\n\n category:  dinner\n cuisine:  german / swabian\n prep time:  30 min\n cook time:  20 min\n serves:  4 people\n diet:  vegetarian 🌱\n\n  ingredients\n\n      500g frozen spinach  tiefgefrorener spinat \n      720g vegetarian swabian maultaschen  schwäbische gemüsemaultaschen \n      250g herb cream cheese  kräuter creme fraîche \n      125g mozzarella\n      1 onion\n      butter or oil\n      salt & pepper\n\n  instructions\n\n1.  thaw spinach  — let frozen spinach thaw\n2.  prep onion & cheese  — peel and dice onion; slice mozzarella into sheets\n3.  layer in baking dish  — arrange maultaschen and spinach in baking dish, top with herb cream, then mozzarella\n4.  bake  — 180°c  e herd 200°c  for ~20 minutes until golden\n\n  nutrition\n\n  ~470 kcal per portion\n  high protein  maultaschen \n\n  notes\n\n  quick weeknight dinner — only 4 basic ingredients to buy\n   must use vegetable based maultaschen   bürger gemüsemaultaschen or similar \n  can add more herbs to taste\n\n  tags\n\n schwäbisch  comfort food  quick  vegetarian\n"
+    },
+    {
+      "slug": "dinner-orecchiette-vegane-chorizo-brokkoli",
+      "title": "Orecchiette mit veganer Chorizo und Brokkoli",
+      "category": "dinner",
+      "cuisine": "Italian-ish",
+      "prepTime": "15 min",
+      "cookTime": "25 min",
+      "serves": "3-4 people",
+      "diet": "Vegetarian",
+      "tags": [
+        "brokkoli",
+        "italian-ish",
+        "orecchiette",
+        "pasta",
+        "vegane-chorizo",
+        "vegetarian",
+        "weeknight"
+      ],
+      "sourcePath": "recipes/dinner/orecchiette-vegane-chorizo-brokkoli.md",
+      "html": "<p><strong>Category:</strong> dinner</p>\n<p><strong>Cuisine:</strong> Italian-ish</p>\n<p><strong>Prep time:</strong> 15 min</p>\n<p><strong>Cook time:</strong> 25 min</p>\n<p><strong>Serves:</strong> 3-4 people</p>\n<p><strong>Diet:</strong> Vegetarian</p>\n<p><strong>Source:</strong> Not Another Cooking Show — https://www.notanothercookingshow.tv/post/orecchiette-sausage-broccolini</p>\n<p><em>House adaptation: sausage replaced with vegan chorizo, broccolini replaced with regular broccoli.</em></p>\n<h3>Ingredients</h3>\n<ul>\n<li>400 g Orecchiette</li>\n<li>200-250 g vegane Chorizo oder vegane Salsiccia, in Stuecke gezupft oder geschnitten</li>\n<li>1 grosser Brokkoli, in sehr kleine Roeschen geschnitten</li>\n<li>3 Knoblauchzehen, fein gehackt</li>\n<li>1 Bio-Zitrone, Abrieb und etwas Saft</li>\n<li>50-70 g Pecorino oder Parmesan, fein gerieben</li>\n<li>Olivenoel</li>\n<li>Chiliflocken</li>\n<li>Salz</li>\n<li>Schwarzer Pfeffer</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li>Brokkoli in sehr kleine Roeschen schneiden. Den Strunk schaelen und klein wuerfeln.</li>\n<li>Orecchiette in gut gesalzenem Wasser sehr al dente kochen. Etwa 2 Minuten vor Ende der Kochzeit den Brokkoli mit ins Pastawasser geben. Vor dem Abgiessen 1-2 Tassen Pastawasser aufheben.</li>\n<li>Waehrenddessen vegane Chorizo in Olivenoel bei mittlerer bis hoher Hitze anbraten, bis sie Farbe bekommt und leicht knusprig wird.</li>\n<li>Hitze reduzieren. Knoblauch und Chiliflocken zur Chorizo geben und kurz anschwitzen, bis der Knoblauch duftet, aber nicht braun wird.</li>\n<li>Pasta und Brokkoli in die Pfanne geben. Mit etwas Pastawasser loesen und kraeftig durchschwenken, damit sich Chorizo-Wuerze, Oel und Staerke zu einer Sauce verbinden.</li>\n<li>Pecorino oder Parmesan einruehren. Falls die Sauce zu trocken ist, mehr Pastawasser zugeben. Mit Salz, Pfeffer, Zitronenabrieb und ein paar Tropfen Zitronensaft abschmecken.</li>\n<li>Mit extra Kaese, schwarzem Pfeffer und etwas Olivenoel servieren.</li>\n</ol>\n<h3>Notes</h3>\n<ul>\n<li>Normaler Brokkoli braucht kleinere Roeschen als Broccolini, damit er schnell gart und gut an der Pasta haengt.</li>\n<li>Wenn die vegane Chorizo wenig Fett abgibt, grosszuegig Olivenoel verwenden.</li>\n<li>Fuer eine vegane Version den Kaese weglassen oder durch veganen Hartkaese ersetzen.</li>\n<li>Nicht automatisch in den Knuspr-Warenkorb legen; Bene hat fuer dieses Rezept explizit nur Speichern gewuenscht.</li>\n</ul>\n<h3>Tags</h3>\n<p>#pasta #orecchiette #brokkoli #vegane-chorizo #vegetarian #weeknight #italian-ish</p>",
+      "searchText": "orecchiette mit veganer chorizo und brokkoli dinner italian-ish vegetarian brokkoli italian-ish orecchiette pasta vegane-chorizo vegetarian weeknight   orecchiette mit veganer chorizo und brokkoli\n\n category:  dinner\n cuisine:  italian ish\n prep time:  15 min\n cook time:  25 min\n serves:  3 4 people\n diet:  vegetarian\n source:  not another cooking show — https://www.notanothercookingshow.tv/post/orecchiette sausage broccolini\n\n house adaptation: sausage replaced with vegan chorizo, broccolini replaced with regular broccoli. \n\n  ingredients\n\n      400 g orecchiette\n      200 250 g vegane chorizo oder vegane salsiccia, in stuecke gezupft oder geschnitten\n      1 grosser brokkoli, in sehr kleine roeschen geschnitten\n      3 knoblauchzehen, fein gehackt\n      1 bio zitrone, abrieb und etwas saft\n      50 70 g pecorino oder parmesan, fein gerieben\n      olivenoel\n      chiliflocken\n      salz\n      schwarzer pfeffer\n\n  instructions\n\n1. brokkoli in sehr kleine roeschen schneiden. den strunk schaelen und klein wuerfeln.\n2. orecchiette in gut gesalzenem wasser sehr al dente kochen. etwa 2 minuten vor ende der kochzeit den brokkoli mit ins pastawasser geben. vor dem abgiessen 1 2 tassen pastawasser aufheben.\n3. waehrenddessen vegane chorizo in olivenoel bei mittlerer bis hoher hitze anbraten, bis sie farbe bekommt und leicht knusprig wird.\n4. hitze reduzieren. knoblauch und chiliflocken zur chorizo geben und kurz anschwitzen, bis der knoblauch duftet, aber nicht braun wird.\n5. pasta und brokkoli in die pfanne geben. mit etwas pastawasser loesen und kraeftig durchschwenken, damit sich chorizo wuerze, oel und staerke zu einer sauce verbinden.\n6. pecorino oder parmesan einruehren. falls die sauce zu trocken ist, mehr pastawasser zugeben. mit salz, pfeffer, zitronenabrieb und ein paar tropfen zitronensaft abschmecken.\n7. mit extra kaese, schwarzem pfeffer und etwas olivenoel servieren.\n\n  notes\n\n  normaler brokkoli braucht kleinere roeschen als broccolini, damit er schnell gart und gut an der pasta haengt.\n  wenn die vegane chorizo wenig fett abgibt, grosszuegig olivenoel verwenden.\n  fuer eine vegane version den kaese weglassen oder durch veganen hartkaese ersetzen.\n  nicht automatisch in den knuspr warenkorb legen; bene hat fuer dieses rezept explizit nur speichern gewuenscht.\n\n  tags\n\n pasta  orecchiette  brokkoli  vegane chorizo  vegetarian  weeknight  italian ish\n"
     },
     {
       "slug": "dinner-orzo-risotto-rauchige-pilze",
@@ -324,6 +351,20 @@
       "sourcePath": "recipes/lunch/make-ahead-lentil-salad.md",
       "html": "<p><strong>Category:</strong> lunch</p>\n<p><strong>Cuisine:</strong> Mediterranean-ish</p>\n<p><strong>Prep time:</strong> 10 min</p>\n<p><strong>Cook time:</strong> 20–25 min</p>\n<p><strong>Serves:</strong> 4 people</p>\n<p><strong>Diet:</strong> Vegetarian 🌱</p>\n<h3>Ingredients</h3>\n<ul>\n<li>1 large bunch Tuscan kale (about 280 g)</li>\n<li>Kosher salt</li>\n<li>1/2 cup raw almonds</li>\n<li>3 scallions</li>\n<li>4 garlic cloves</li>\n<li>1 lemon</li>\n<li>1/2 cup extra-virgin olive oil</li>\n<li>1 can lentils (about 400 g, drained)</li>\n<li>1 tbsp cumin seeds</li>\n<li>1/2 tsp chilli flakes</li>\n<li>140 g feta</li>\n<li>1 cup Castelvetrano olives</li>\n<li>1 ciabatta</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li><strong>Prep the kale</strong> — Strip kale leaves from the stems and slice into thin ribbons. Put in a large bowl, season with salt, and massage for 1–2 minutes until softened and darker.</li>\n<li><strong>Start the flavour oil</strong> — Bring a large pot of salted water to a boil. Meanwhile, coarsely chop the almonds. Trim scallions and separate white and green parts. Thinly slice the white parts into a small skillet. Smash and peel the garlic. Remove 3 strips of lemon peel and add them to the skillet with the garlic and olive oil.</li>\n<li><strong>Toast the aromatics</strong> — Heat the skillet over medium heat. Cook until the garlic starts to brown and the lemon peel curls, about 3 minutes. Add almonds and cook until browned, about 3 more minutes. Remove from the heat and stir in cumin seeds and chilli flakes.</li>\n<li><strong>Strain and reserve</strong> — Strain the mixture through a fine sieve into a bowl. Keep the infused oil for the dressing. Spread the almond mixture on a plate or tray, season lightly with salt, and let it cool.</li>\n<li><strong>Build the salad</strong> — Crumble feta into the kale. Smash and pit the olives, tear into pieces, and add them in. Slice the scallion greens and add most of them. Squeeze in the lemon juice and add a little more salt.</li>\n<li><strong>Finish</strong> — Drain and rinse the canned lentils well, then add them to the salad. Pour over the infused oil, add half the almond mixture, and toss everything together.</li>\n<li><strong>Serve</strong> — Top with the remaining almonds and scallion greens. Serve with ciabatta on the side.</li>\n</ol>\n<h3>Notes</h3>\n<ul>\n<li>Keeps well and actually improves after sitting a bit, so it’s excellent for meal prep.</li>\n<li>Adapted for a faster weeknight version: use canned lentils instead of cooking dry lentils from scratch.</li>\n<li>Ciabatta is an added house tweak, not part of the original recipe.</li>\n</ul>\n<h3>Tags</h3>\n<p>#lentils #salad #meal-prep #kale #vegetarian #bonappetit</p>",
       "searchText": "make-ahead lentil salad lunch mediterranean-ish vegetarian 🌱 bonappetit kale lentils meal-prep salad vegetarian   make ahead lentil salad\n\n category:  lunch\n cuisine:  mediterranean ish\n prep time:  10 min\n cook time:  20–25 min\n serves:  4 people\n diet:  vegetarian 🌱\n\n  ingredients\n\n      1 large bunch tuscan kale  about 280 g \n      kosher salt\n      1/2 cup raw almonds\n      3 scallions\n      4 garlic cloves\n      1 lemon\n      1/2 cup extra virgin olive oil\n      1 can lentils  about 400 g, drained \n      1 tbsp cumin seeds\n      1/2 tsp chilli flakes\n      140 g feta\n      1 cup castelvetrano olives\n      1 ciabatta\n\n  instructions\n\n1.  prep the kale  — strip kale leaves from the stems and slice into thin ribbons. put in a large bowl, season with salt, and massage for 1–2 minutes until softened and darker.\n2.  start the flavour oil  — bring a large pot of salted water to a boil. meanwhile, coarsely chop the almonds. trim scallions and separate white and green parts. thinly slice the white parts into a small skillet. smash and peel the garlic. remove 3 strips of lemon peel and add them to the skillet with the garlic and olive oil.\n3.  toast the aromatics  — heat the skillet over medium heat. cook until the garlic starts to brown and the lemon peel curls, about 3 minutes. add almonds and cook until browned, about 3 more minutes. remove from the heat and stir in cumin seeds and chilli flakes.\n4.  strain and reserve  — strain the mixture through a fine sieve into a bowl. keep the infused oil for the dressing. spread the almond mixture on a plate or tray, season lightly with salt, and let it cool.\n5.  build the salad  — crumble feta into the kale. smash and pit the olives, tear into pieces, and add them in. slice the scallion greens and add most of them. squeeze in the lemon juice and add a little more salt.\n6.  finish  — drain and rinse the canned lentils well, then add them to the salad. pour over the infused oil, add half the almond mixture, and toss everything together.\n7.  serve  — top with the remaining almonds and scallion greens. serve with ciabatta on the side.\n\n  notes\n\n  keeps well and actually improves after sitting a bit, so it’s excellent for meal prep.\n  adapted for a faster weeknight version: use canned lentils instead of cooking dry lentils from scratch.\n  ciabatta is an added house tweak, not part of the original recipe.\n\n  tags\n\n lentils  salad  meal prep  kale  vegetarian  bonappetit\n"
+    },
+    {
+      "slug": "pesto-alla-trapanese",
+      "title": "Pesto alla Trapanese mit Caserecce",
+      "category": "recipes",
+      "cuisine": "",
+      "prepTime": "",
+      "cookTime": "",
+      "serves": "",
+      "diet": "",
+      "tags": [],
+      "sourcePath": "recipes/pesto-alla-trapanese.md",
+      "html": "<p>Quelle: https://www.notanothercookingshow.tv/post/pesto-alla-trapanese-with-fresh-busiate</p>\n<p>Für 2-3 Portionen.</p>\n<h3>Zutaten</h3>\n<ul>\n<li>300-400 g Busiate oder kurze Pasta, z. B. Caserecce</li>\n<li>400 g reife Cherry- oder Rispentomaten</li>\n<li>1 Bund Basilikum, grob gezupft</li>\n<li>1 kleine Knoblauchzehe</li>\n<li>70-100 g blanchierte Mandeln</li>\n<li>60-80 g Pecorino, fein gerieben</li>\n<li>60-90 ml gutes Olivenöl</li>\n<li>Salz</li>\n<li>Schwarzer Pfeffer</li>\n<li>Optional: etwas Zitronenabrieb oder Chili</li>\n</ul>\n<h3>Zubereitung</h3>\n<ol>\n<li>Mandeln in einer trockenen Pfanne leicht anroesten, dann abkuehlen lassen.</li>\n<li>Tomaten halbieren. Wenn sie sehr waessrig sind, kurz salzen und 5 Minuten ziehen lassen.</li>\n<li>Mandeln, Knoblauch, Basilikum, Tomaten, Pecorino und Olivenoel grob mixen oder moersern. Nicht komplett glatt machen; es soll rustikal-cremig bleiben.</li>\n<li>Mit Salz und Pfeffer abschmecken. Falls es flach schmeckt, mehr Pecorino, etwas Salz oder einen Hauch Zitronenabrieb zugeben.</li>\n<li>Pasta sehr al dente kochen. Eine Tasse Pastawasser aufheben.</li>\n<li>Pasta mit dem Pesto vermengen, dabei schluckweise Pastawasser zugeben, bis die Sauce cremig an der Pasta haengt.</li>\n<li>Mit mehr Pecorino, Basilikum und Olivenoel servieren.</li>\n</ol>\n<h3>Notizen</h3>\n<ul>\n<li>Knoblauch vorsichtig dosieren, weil er roh ins Pesto kommt. Eine kleine Zehe reicht meistens.</li>\n<li>Busiate war bei Knuspr nicht verfuegbar; Caserecce ist ein guter kurzer Pasta-Ersatz.</li>\n<li>Fuer den Knuspr-Warenkorb wurden Caserecce, Cherryrispentomaten, Basilikum, blanchierte Mandeln und Pecorino verwendet. Knoblauch war bereits im Warenkorb; Oel, Salz und Pfeffer wurden als Vorratssachen ausgelassen.</li>\n</ul>",
+      "searchText": "pesto alla trapanese mit caserecce recipes      pesto alla trapanese mit caserecce\n\nquelle: https://www.notanothercookingshow.tv/post/pesto alla trapanese with fresh busiate\n\nfür 2 3 portionen.\n\n  zutaten\n\n  300 400 g busiate oder kurze pasta, z. b. caserecce\n  400 g reife cherry  oder rispentomaten\n  1 bund basilikum, grob gezupft\n  1 kleine knoblauchzehe\n  70 100 g blanchierte mandeln\n  60 80 g pecorino, fein gerieben\n  60 90 ml gutes olivenöl\n  salz\n  schwarzer pfeffer\n  optional: etwas zitronenabrieb oder chili\n\n  zubereitung\n\n1. mandeln in einer trockenen pfanne leicht anroesten, dann abkuehlen lassen.\n2. tomaten halbieren. wenn sie sehr waessrig sind, kurz salzen und 5 minuten ziehen lassen.\n3. mandeln, knoblauch, basilikum, tomaten, pecorino und olivenoel grob mixen oder moersern. nicht komplett glatt machen; es soll rustikal cremig bleiben.\n4. mit salz und pfeffer abschmecken. falls es flach schmeckt, mehr pecorino, etwas salz oder einen hauch zitronenabrieb zugeben.\n5. pasta sehr al dente kochen. eine tasse pastawasser aufheben.\n6. pasta mit dem pesto vermengen, dabei schluckweise pastawasser zugeben, bis die sauce cremig an der pasta haengt.\n7. mit mehr pecorino, basilikum und olivenoel servieren.\n\n  notizen\n\n  knoblauch vorsichtig dosieren, weil er roh ins pesto kommt. eine kleine zehe reicht meistens.\n  busiate war bei knuspr nicht verfuegbar; caserecce ist ein guter kurzer pasta ersatz.\n  fuer den knuspr warenkorb wurden caserecce, cherryrispentomaten, basilikum, blanchierte mandeln und pecorino verwendet. knoblauch war bereits im warenkorb; oel, salz und pfeffer wurden als vorratssachen ausgelassen.\n"
     }
   ]
 }
