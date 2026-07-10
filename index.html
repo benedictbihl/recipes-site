@@ -50,7 +50,7 @@
         max-width: 100%;
         min-height: 100vh;
         display: grid;
-        grid-template-columns: minmax(280px, 360px) minmax(0, 1fr);
+        grid-template-columns: minmax(270px, 330px) minmax(0, 1fr);
       }
 
       .sidebar {
@@ -177,7 +177,7 @@
       .main {
         min-width: 0;
         max-width: 100%;
-        padding: 30px clamp(20px, 5vw, 64px) 48px;
+        padding: 30px clamp(22px, 3vw, 48px) 48px;
       }
 
       .toolbar {
@@ -195,9 +195,9 @@
 
       .layout {
         min-width: 0;
-        max-width: 100%;
+        max-width: 1240px;
         display: grid;
-        grid-template-columns: minmax(220px, 320px) minmax(0, 820px);
+        grid-template-columns: minmax(340px, 420px) minmax(520px, 760px);
         gap: 24px;
         align-items: start;
       }
@@ -207,12 +207,15 @@
         max-width: 100%;
         display: grid;
         gap: 10px;
+        max-height: calc(100vh - 126px);
+        overflow: auto;
+        padding-right: 4px;
       }
 
       .recipe-button {
         width: 100%;
-        min-height: 88px;
-        padding: 14px;
+        min-height: 78px;
+        padding: 13px 14px;
         border: 1px solid rgba(32, 33, 29, 0.1);
         border-radius: 8px;
         background: rgba(255, 253, 250, 0.9);
@@ -262,7 +265,7 @@
       }
 
       .detail-header {
-        padding: clamp(22px, 4vw, 34px);
+        padding: 28px 34px;
         background:
           linear-gradient(135deg, rgba(38, 112, 100, 0.12), rgba(191, 78, 58, 0.1)),
           var(--surface-strong);
@@ -271,16 +274,20 @@
 
       .detail-header h2 {
         margin: 0;
-        font-size: clamp(1.8rem, 4vw, 3.1rem);
-        line-height: 1.04;
+        max-width: 12ch;
+        font-size: clamp(2rem, 3.2vw, 3.35rem);
+        line-height: 1.08;
         letter-spacing: 0;
+        overflow-wrap: normal;
+        hyphens: auto;
       }
 
       .detail-facts {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 18px;
+        gap: 8px 10px;
+        max-width: 520px;
+        margin-top: 20px;
       }
 
       .fact {
@@ -293,7 +300,8 @@
       }
 
       .detail-body {
-        padding: clamp(22px, 4vw, 36px);
+        padding: 28px 34px 34px;
+        font-size: 0.98rem;
       }
 
       .detail-body h3 {
@@ -320,6 +328,17 @@
 
       .detail-body p {
         margin: 0.75rem 0;
+      }
+
+      @media (min-width: 1280px) {
+        .layout {
+          grid-template-columns: minmax(380px, 460px) minmax(560px, 760px);
+          gap: 28px;
+        }
+
+        .recipe-button {
+          min-height: 72px;
+        }
       }
 
       .source {
@@ -352,8 +371,10 @@
         }
 
         .layout {
+          width: 100%;
           display: flex;
           flex-direction: column;
+          align-items: stretch;
           gap: 18px;
         }
 
@@ -361,9 +382,11 @@
           width: 100%;
           display: flex;
           gap: 12px;
+          max-height: none;
           margin: 0;
           padding: 2px 0 12px;
           overflow-x: auto;
+          overflow-y: hidden;
           overscroll-behavior-x: contain;
           scroll-padding-inline: 0;
           scroll-snap-type: x mandatory;
@@ -375,6 +398,10 @@
           width: auto;
           min-height: 112px;
           scroll-snap-align: start;
+        }
+
+        .recipe-detail {
+          width: 100%;
         }
       }
 
@@ -461,6 +488,7 @@
         }
 
         .detail-header h2 {
+          max-width: none;
           font-size: 1.65rem;
         }
 
@@ -470,13 +498,20 @@
         }
 
         .detail-facts {
+          display: grid;
+          grid-template-columns: 1fr;
           gap: 7px;
           margin-top: 14px;
         }
 
         .fact {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 0;
           padding: 6px 9px;
           font-size: 0.82rem;
+          text-align: center;
         }
 
         .detail-body ul,
