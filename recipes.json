@@ -1,6 +1,6 @@
 {
   "generatedAt": "build-time",
-  "recipeCount": 15,
+  "recipeCount": 17,
   "categories": [
     "breakfast",
     "dinner",
@@ -8,7 +8,9 @@
     "recipes"
   ],
   "tags": [
+    "aubergine",
     "beans",
+    "bergkaese",
     "bohnen",
     "bolognese",
     "bonappetit",
@@ -21,16 +23,22 @@
     "comfort-food",
     "custom",
     "falafel",
+    "feta",
     "gefuellt",
+    "gemuesepfanne",
     "german",
+    "greek-inspired",
     "gulasch",
     "halloumi",
     "hellofresh-adapted",
     "hirtenkaese",
     "italian-ish",
     "kale",
+    "kartoffeln",
+    "kidneybohnen",
     "kohl",
     "lentils",
+    "mais",
     "meal-prep",
     "mediterranean",
     "mushrooms",
@@ -54,6 +62,8 @@
     "schwäbisch",
     "smoky",
     "stew",
+    "tempeh",
+    "tex-mex-inspired",
     "tofu",
     "vegan",
     "vegane-chorizo",
@@ -145,6 +155,30 @@
       "sourcePath": "recipes/dinner/geschmorte-kohlpfanne.md",
       "html": "<p><strong>Category:</strong> dinner</p>\n<p><strong>Cuisine:</strong> Polish-inspired</p>\n<p><strong>Prep time:</strong> 25 min</p>\n<p><strong>Cook time:</strong> 60–65 min</p>\n<p><strong>Serves:</strong> 4 people</p>\n<p><strong>Diet:</strong> Vegetarian 🌱</p>\n<p><em>Ein einfaches, sehr aromatisches Schmorgericht mit angebratenem Kohl, Tomaten, Weißwein und weißen Bohnen.</em></p>\n<h3>Ingredients</h3>\n<ul>\n<li>1 mittelgroßer Kohlkopf</li>\n<li>3 EL neutrales Öl</li>\n<li>1 EL Olivenöl</li>\n<li>1 Zwiebel</li>\n<li>2 Karotten</li>\n<li>2 Knoblauchzehen</li>\n<li>1 Dose gehackte Tomaten</li>\n<li>200 ml trockener Weißwein</li>\n<li>300 g weiße Bohnen</li>\n<li>1 EL Aceto Balsamico</li>\n<li>Cayennepfeffer</li>\n<li>Salz und Pfeffer</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li>Backofen auf 180 °C vorheizen.</li>\n<li>Falls Bohnen aus der Dose verwendet werden, gut abtropfen lassen. Getrocknete Bohnen vorher über Nacht einweichen und nach Packungsangabe weich kochen.</li>\n<li>Karotten und Zwiebel schälen und klein würfeln. Knoblauch schälen und sehr fein hacken.</li>\n<li>Kohl entlang des Strunks in 8 Keile schneiden. Jeden Keil mit etwas Salz einreiben.</li>\n<li>Neutrales Öl in einer großen ofenfesten Pfanne erhitzen. Kohlkeile bei mittelhoher Temperatur von beiden Seiten dunkel anbraten, ohne sie verbrennen zu lassen. Herausnehmen und beiseitestellen.</li>\n<li>Hitze auf mittlere Stufe reduzieren. Olivenöl, Zwiebel, Karotten und eine Prise Salz in die Pfanne geben. Unter gelegentlichem Rühren schmoren, bis das Gemüse leicht goldbraun wird.</li>\n<li>Knoblauch, Aceto Balsamico, eine Prise Cayennepfeffer und eine weitere Prise Salz hinzufügen. Unter Rühren 2 Minuten kochen.</li>\n<li>Gehackte Tomaten und Weißwein hinzugeben.</li>\n<li>Kohlspalten mitsamt ausgetretener Flüssigkeit auf der Soße verteilen. Pfanne abdecken und in der Mitte des Ofens 45 Minuten backen.</li>\n<li>Ofen auf 230 °C hochdrehen. Deckel abnehmen und weiße Bohnen zwischen die Kohlspalten geben.</li>\n<li>Weitere 15–20 Minuten offen backen, bis der Kohl leicht knusprig wird. Direkt servieren.</li>\n</ol>\n<h3>Notes</h3>\n<ul>\n<li>Dazu passen gewürztes Brot oder Sour Cream.</li>\n<li>Als vegetarisches Hauptgericht mit Brot besonders gut.</li>\n<li>Aus einem PDF-Rezept übernommen und für Bene &amp; Igas Rezeptdatenbank sauber formatiert.</li>\n</ul>\n<h3>Tags</h3>\n<p>#kohl #bohnen #ofen #vegetarian #schmorgericht #polish-inspired</p>",
       "searchText": "geschmorte kohlpfanne dinner polish-inspired vegetarian 🌱 bohnen kohl ofen polish-inspired schmorgericht vegetarian   geschmorte kohlpfanne\n\n category:  dinner\n cuisine:  polish inspired\n prep time:  25 min\n cook time:  60–65 min\n serves:  4 people\n diet:  vegetarian 🌱\n\n ein einfaches, sehr aromatisches schmorgericht mit angebratenem kohl, tomaten, weißwein und weißen bohnen. \n\n  ingredients\n\n      1 mittelgroßer kohlkopf\n      3 el neutrales öl\n      1 el olivenöl\n      1 zwiebel\n      2 karotten\n      2 knoblauchzehen\n      1 dose gehackte tomaten\n      200 ml trockener weißwein\n      300 g weiße bohnen\n      1 el aceto balsamico\n      cayennepfeffer\n      salz und pfeffer\n\n  instructions\n\n1. backofen auf 180 °c vorheizen.\n2. falls bohnen aus der dose verwendet werden, gut abtropfen lassen. getrocknete bohnen vorher über nacht einweichen und nach packungsangabe weich kochen.\n3. karotten und zwiebel schälen und klein würfeln. knoblauch schälen und sehr fein hacken.\n4. kohl entlang des strunks in 8 keile schneiden. jeden keil mit etwas salz einreiben.\n5. neutrales öl in einer großen ofenfesten pfanne erhitzen. kohlkeile bei mittelhoher temperatur von beiden seiten dunkel anbraten, ohne sie verbrennen zu lassen. herausnehmen und beiseitestellen.\n6. hitze auf mittlere stufe reduzieren. olivenöl, zwiebel, karotten und eine prise salz in die pfanne geben. unter gelegentlichem rühren schmoren, bis das gemüse leicht goldbraun wird.\n7. knoblauch, aceto balsamico, eine prise cayennepfeffer und eine weitere prise salz hinzufügen. unter rühren 2 minuten kochen.\n8. gehackte tomaten und weißwein hinzugeben.\n9. kohlspalten mitsamt ausgetretener flüssigkeit auf der soße verteilen. pfanne abdecken und in der mitte des ofens 45 minuten backen.\n10. ofen auf 230 °c hochdrehen. deckel abnehmen und weiße bohnen zwischen die kohlspalten geben.\n11. weitere 15–20 minuten offen backen, bis der kohl leicht knusprig wird. direkt servieren.\n\n  notes\n\n  dazu passen gewürztes brot oder sour cream.\n  als vegetarisches hauptgericht mit brot besonders gut.\n  aus einem pdf rezept übernommen und für bene & igas rezeptdatenbank sauber formatiert.\n\n  tags\n\n kohl  bohnen  ofen  vegetarian  schmorgericht  polish inspired\n"
+    },
+    {
+      "slug": "dinner-griechische-gemuesepfanne-mit-feta",
+      "title": "Griechische Gemüsepfanne mit Feta",
+      "category": "dinner",
+      "cuisine": "Greek-inspired",
+      "prepTime": "20 min",
+      "cookTime": "45 min",
+      "serves": "4 people",
+      "diet": "Vegetarian 🌱",
+      "tags": [
+        "aubergine",
+        "feta",
+        "gemuesepfanne",
+        "greek-inspired",
+        "hirtenkaese",
+        "kartoffeln",
+        "oven",
+        "vegetarian",
+        "zucchini"
+      ],
+      "sourcePath": "recipes/dinner/griechische-gemuesepfanne-mit-feta.md",
+      "html": "<p><strong>Category:</strong> dinner</p>\n<p><strong>Cuisine:</strong> Greek-inspired</p>\n<p><strong>Prep time:</strong> 20 min</p>\n<p><strong>Cook time:</strong> 45 min</p>\n<p><strong>Serves:</strong> 4 people</p>\n<p><strong>Diet:</strong> Vegetarian 🌱</p>\n<p><strong>Source:</strong> Knuspr Chef — https://www.knuspr.de/chef/69-griechische-gemuesepfanne-mit-feta</p>\n<p><em>Simple oven vegetables with potatoes, feta and fresh herbs. Best with a little acidity at the end so it does not taste flat.</em></p>\n<h3>Ingredients</h3>\n<ul>\n<li>2 Zucchini</li>\n<li>1 Aubergine</li>\n<li>1 rote Paprika</li>\n<li>300 g Kirschtomaten</li>\n<li>1 Knoblauchknolle</li>\n<li>2 Zwiebeln</li>\n<li>450 g kleine Kartoffeln</li>\n<li>100 g Feta or Hirtenkäse</li>\n<li>2 Zweige Thymian</li>\n<li>10 g Petersilie</li>\n<li>5 EL Olivenöl</li>\n<li>Salz</li>\n<li>Schwarzer Pfeffer</li>\n<li>Optional: Zitronensaft or ein kleiner Schuss heller Essig</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li>Backofen auf 220 °C Umluft vorheizen.</li>\n<li>Zucchini und Aubergine waschen, trocknen und in Scheiben schneiden.</li>\n<li>Zwiebeln schälen und in Spalten schneiden. Knoblauch pressen. Paprika in Streifen schneiden. Kirschtomaten halbieren. Kartoffeln waschen und halbieren.</li>\n<li>Aubergine in einer großen Auflaufform oder auf einem tiefen Backblech verteilen. Paprika, Zucchini, Zwiebeln, Knoblauch, Kirschtomaten und Kartoffeln darübergeben.</li>\n<li>Alles kräftig mit Salz und Pfeffer würzen, mit Olivenöl beträufeln und gut vermengen.</li>\n<li>Gemüse ca. 45 Minuten backen, bis die Kartoffeln gar sind und das Gemüse Farbe bekommen hat.</li>\n<li>Währenddessen Petersilie und Thymian waschen, trocknen, Blättchen abzupfen und fein hacken. Feta zerbröseln.</li>\n<li>Gemüse aus dem Ofen nehmen, kurz abkühlen lassen und mit Feta und Kräutern bestreuen.</li>\n<li>Optional mit etwas Zitronensaft oder Essig abschmecken.</li>\n</ol>\n<h3>Notes</h3>\n<ul>\n<li>Hirtenkäse funktioniert gut als günstigerer Feta-Ersatz.</li>\n<li>Wenn die Kartoffeln größer sind, etwas kleiner schneiden oder 5–10 Minuten länger backen.</li>\n<li>Passt gut mit Brot, Tsatsiki or einem einfachen grünen Salat.</li>\n</ul>\n<h3>Tags</h3>\n<p>#gemuesepfanne #feta #hirtenkaese #zucchini #aubergine #kartoffeln #vegetarian #oven #greek-inspired</p>",
+      "searchText": "griechische gemüsepfanne mit feta dinner greek-inspired vegetarian 🌱 aubergine feta gemuesepfanne greek-inspired hirtenkaese kartoffeln oven vegetarian zucchini   griechische gemüsepfanne mit feta\n\n category:  dinner\n cuisine:  greek inspired\n prep time:  20 min\n cook time:  45 min\n serves:  4 people\n diet:  vegetarian 🌱\n source:  knuspr chef — https://www.knuspr.de/chef/69 griechische gemuesepfanne mit feta\n\n simple oven vegetables with potatoes, feta and fresh herbs. best with a little acidity at the end so it does not taste flat. \n\n  ingredients\n\n      2 zucchini\n      1 aubergine\n      1 rote paprika\n      300 g kirschtomaten\n      1 knoblauchknolle\n      2 zwiebeln\n      450 g kleine kartoffeln\n      100 g feta or hirtenkäse\n      2 zweige thymian\n      10 g petersilie\n      5 el olivenöl\n      salz\n      schwarzer pfeffer\n      optional: zitronensaft or ein kleiner schuss heller essig\n\n  instructions\n\n1. backofen auf 220 °c umluft vorheizen.\n2. zucchini und aubergine waschen, trocknen und in scheiben schneiden.\n3. zwiebeln schälen und in spalten schneiden. knoblauch pressen. paprika in streifen schneiden. kirschtomaten halbieren. kartoffeln waschen und halbieren.\n4. aubergine in einer großen auflaufform oder auf einem tiefen backblech verteilen. paprika, zucchini, zwiebeln, knoblauch, kirschtomaten und kartoffeln darübergeben.\n5. alles kräftig mit salz und pfeffer würzen, mit olivenöl beträufeln und gut vermengen.\n6. gemüse ca. 45 minuten backen, bis die kartoffeln gar sind und das gemüse farbe bekommen hat.\n7. währenddessen petersilie und thymian waschen, trocknen, blättchen abzupfen und fein hacken. feta zerbröseln.\n8. gemüse aus dem ofen nehmen, kurz abkühlen lassen und mit feta und kräutern bestreuen.\n9. optional mit etwas zitronensaft oder essig abschmecken.\n\n  notes\n\n  hirtenkäse funktioniert gut als günstigerer feta ersatz.\n  wenn die kartoffeln größer sind, etwas kleiner schneiden oder 5–10 minuten länger backen.\n  passt gut mit brot, tsatsiki or einem einfachen grünen salat.\n\n  tags\n\n gemuesepfanne  feta  hirtenkaese  zucchini  aubergine  kartoffeln  vegetarian  oven  greek inspired\n"
     },
     {
       "slug": "dinner-maultaschen-auflauf-spinat",
@@ -267,6 +301,29 @@
       "sourcePath": "recipes/dinner/tofu-bolognese.md",
       "html": "<p><strong>Category:</strong> dinner</p>\n<p><strong>Cuisine:</strong> Italian-ish</p>\n<p><strong>Prep time:</strong> 20 min</p>\n<p><strong>Cook time:</strong> 35 min</p>\n<p><strong>Serves:</strong> 4 people</p>\n<p><strong>Diet:</strong> Vegetarian 🌱</p>\n<p><em>Stored house version based on Bene&#x27;s dictated ingredient list. Steps intentionally kept short.</em></p>\n<h3>Ingredients</h3>\n<ul>\n<li>2 Blöcke normaler Tofu</li>\n<li>Sellerie</li>\n<li>Karotten</li>\n<li>Zwiebeln</li>\n<li>Knoblauch</li>\n<li>Tomatenmark</li>\n<li>Rotwein</li>\n<li>Tomatenpassata</li>\n<li>Getrocknete Tomaten</li>\n<li>Pinienkerne</li>\n<li>Basilikum</li>\n<li>Spaghetti</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li>Gemüse fein hacken, Tofu zerbröseln.</li>\n<li>Tofu anbraten, dann Gemüse dazugeben.</li>\n<li>Tomatenmark mitrösten, mit Rotwein ablöschen.</li>\n<li>Passata dazugeben und einkochen lassen.</li>\n<li>Getrocknete Tomaten, Pinienkerne und Basilikum gegen Ende unterrühren.</li>\n<li>Mit Spaghetti servieren.</li>\n</ol>\n<h3>Notes</h3>\n<ul>\n<li>Mengen noch nicht standardisiert, weil Bene nur die Zutaten diktiert hat.</li>\n<li>Gute Hausversion zum späteren Ergänzen mit exakten Mengen, falls ihr wollt.</li>\n</ul>\n<h3>Tags</h3>\n<p>#pasta #bolognese #tofu #vegetarian #weeknight</p>",
       "searchText": "tofu-bolognese dinner italian-ish vegetarian 🌱 bolognese pasta tofu vegetarian weeknight   tofu bolognese\n\n category:  dinner\n cuisine:  italian ish\n prep time:  20 min\n cook time:  35 min\n serves:  4 people\n diet:  vegetarian 🌱\n\n stored house version based on bene's dictated ingredient list. steps intentionally kept short. \n\n  ingredients\n\n      2 blöcke normaler tofu\n      sellerie\n      karotten\n      zwiebeln\n      knoblauch\n      tomatenmark\n      rotwein\n      tomatenpassata\n      getrocknete tomaten\n      pinienkerne\n      basilikum\n      spaghetti\n\n  instructions\n\n1. gemüse fein hacken, tofu zerbröseln.\n2. tofu anbraten, dann gemüse dazugeben.\n3. tomatenmark mitrösten, mit rotwein ablöschen.\n4. passata dazugeben und einkochen lassen.\n5. getrocknete tomaten, pinienkerne und basilikum gegen ende unterrühren.\n6. mit spaghetti servieren.\n\n  notes\n\n  mengen noch nicht standardisiert, weil bene nur die zutaten diktiert hat.\n  gute hausversion zum späteren ergänzen mit exakten mengen, falls ihr wollt.\n\n  tags\n\n pasta  bolognese  tofu  vegetarian  weeknight\n"
+    },
+    {
+      "slug": "dinner-ueberbackene-zucchini-mit-tempeh",
+      "title": "Überbackene Zucchini mit Tempeh",
+      "category": "dinner",
+      "cuisine": "Tex-Mex-inspired / vegetarian",
+      "prepTime": "20 min",
+      "cookTime": "30 min",
+      "serves": "2 people",
+      "diet": "Vegetarian 🌱",
+      "tags": [
+        "bergkaese",
+        "kidneybohnen",
+        "mais",
+        "oven",
+        "tempeh",
+        "tex-mex-inspired",
+        "vegetarian",
+        "zucchini"
+      ],
+      "sourcePath": "recipes/dinner/ueberbackene-zucchini-mit-tempeh.md",
+      "html": "<p><strong>Category:</strong> dinner</p>\n<p><strong>Cuisine:</strong> Tex-Mex-inspired / vegetarian</p>\n<p><strong>Prep time:</strong> 20 min</p>\n<p><strong>Cook time:</strong> 30 min</p>\n<p><strong>Serves:</strong> 2 people</p>\n<p><strong>Diet:</strong> Vegetarian 🌱</p>\n<p><strong>Source:</strong> Knuspr Chef — https://www.knuspr.de/chef/1620-ueberbackene-zucchini-mit-tempeh</p>\n<p><em>Gefüllte Zucchini mit Tempeh, Bohnen, Mais, Paprika und Käse. Schnell genug für unter der Woche.</em></p>\n<h3>Ingredients</h3>\n<ul>\n<li>200 g marinierter Tempeh</li>\n<li>600 g Zucchini, ca. 2 kleine Stück</li>\n<li>1 gelbe Paprika</li>\n<li>1 gelbe Zwiebel</li>\n<li>2 Knoblauchzehen</li>\n<li>1/2 rote Chilischote</li>\n<li>100 g Kidneybohnen aus der Dose</li>\n<li>50 g Mais aus der Dose</li>\n<li>30 g Tomatenmark</li>\n<li>1 EL Olivenöl</li>\n<li>1 Prise getrockneter Oregano</li>\n<li>1 Prise Kreuzkümmel</li>\n<li>30 g Bergkäse am Stück, gerieben</li>\n<li>Salz</li>\n<li>Schwarzer Pfeffer</li>\n<li>1 Limette</li>\n<li>200 g saure Sahne</li>\n<li>1 Schale frische Kresse</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li>Zwiebel, Knoblauch und Chili schälen bzw. putzen und fein hacken.</li>\n<li>Paprika waschen, entkernen und fein würfeln. Tempeh mit den Händen zerbröseln. Bergkäse fein reiben.</li>\n<li>Zucchini längs halbieren und das weiche Innere mit einem Löffel großzügig aushöhlen.</li>\n<li>Olivenöl in einer Pfanne erhitzen. Zwiebel und Knoblauch darin glasig dünsten.</li>\n<li>Paprikawürfel dazugeben und kurz mitbraten.</li>\n<li>Chili, Kidneybohnen, Mais, Tempeh und Tomatenmark unterrühren.</li>\n<li>Mit Kreuzkümmel, Oregano, Salz und Pfeffer würzen. Alles gut vermengen und bei geringer Hitze ca. 1 Minute köcheln lassen.</li>\n<li>Geriebenen Bergkäse unterrühren und die Pfanne vom Herd nehmen.</li>\n<li>Backofen auf 200 °C Ober-/Unterhitze vorheizen.</li>\n<li>Zucchinihälften in eine Auflaufform legen und leicht salzen.</li>\n<li>Zucchini mit der Tempeh-Mischung füllen und ca. 30 Minuten backen.</li>\n<li>Mit einer Gabel prüfen, ob die Zucchini weich sind. Falls die Füllung zu dunkel wird, locker mit Alufolie abdecken.</li>\n<li>Mit Kresse, Limettenspalten und saurer Sahne servieren.</li>\n</ol>\n<h3>Notes</h3>\n<ul>\n<li>Wenn es mehr nach Chili sin carne schmecken soll: etwas geräuchertes Paprikapulver in die Füllung geben.</li>\n<li>Für 4 Portionen einfach alles verdoppeln und eine große Auflaufform nehmen.</li>\n<li>Reste lassen sich gut aufwärmen, werden aber weicher.</li>\n</ul>\n<h3>Tags</h3>\n<p>#zucchini #tempeh #kidneybohnen #mais #bergkaese #vegetarian #oven #tex-mex-inspired</p>",
+      "searchText": "überbackene zucchini mit tempeh dinner tex-mex-inspired / vegetarian vegetarian 🌱 bergkaese kidneybohnen mais oven tempeh tex-mex-inspired vegetarian zucchini   überbackene zucchini mit tempeh\n\n category:  dinner\n cuisine:  tex mex inspired / vegetarian\n prep time:  20 min\n cook time:  30 min\n serves:  2 people\n diet:  vegetarian 🌱\n source:  knuspr chef — https://www.knuspr.de/chef/1620 ueberbackene zucchini mit tempeh\n\n gefüllte zucchini mit tempeh, bohnen, mais, paprika und käse. schnell genug für unter der woche. \n\n  ingredients\n\n      200 g marinierter tempeh\n      600 g zucchini, ca. 2 kleine stück\n      1 gelbe paprika\n      1 gelbe zwiebel\n      2 knoblauchzehen\n      1/2 rote chilischote\n      100 g kidneybohnen aus der dose\n      50 g mais aus der dose\n      30 g tomatenmark\n      1 el olivenöl\n      1 prise getrockneter oregano\n      1 prise kreuzkümmel\n      30 g bergkäse am stück, gerieben\n      salz\n      schwarzer pfeffer\n      1 limette\n      200 g saure sahne\n      1 schale frische kresse\n\n  instructions\n\n1. zwiebel, knoblauch und chili schälen bzw. putzen und fein hacken.\n2. paprika waschen, entkernen und fein würfeln. tempeh mit den händen zerbröseln. bergkäse fein reiben.\n3. zucchini längs halbieren und das weiche innere mit einem löffel großzügig aushöhlen.\n4. olivenöl in einer pfanne erhitzen. zwiebel und knoblauch darin glasig dünsten.\n5. paprikawürfel dazugeben und kurz mitbraten.\n6. chili, kidneybohnen, mais, tempeh und tomatenmark unterrühren.\n7. mit kreuzkümmel, oregano, salz und pfeffer würzen. alles gut vermengen und bei geringer hitze ca. 1 minute köcheln lassen.\n8. geriebenen bergkäse unterrühren und die pfanne vom herd nehmen.\n9. backofen auf 200 °c ober /unterhitze vorheizen.\n10. zucchinihälften in eine auflaufform legen und leicht salzen.\n11. zucchini mit der tempeh mischung füllen und ca. 30 minuten backen.\n12. mit einer gabel prüfen, ob die zucchini weich sind. falls die füllung zu dunkel wird, locker mit alufolie abdecken.\n13. mit kresse, limettenspalten und saurer sahne servieren.\n\n  notes\n\n  wenn es mehr nach chili sin carne schmecken soll: etwas geräuchertes paprikapulver in die füllung geben.\n  für 4 portionen einfach alles verdoppeln und eine große auflaufform nehmen.\n  reste lassen sich gut aufwärmen, werden aber weicher.\n\n  tags\n\n zucchini  tempeh  kidneybohnen  mais  bergkaese  vegetarian  oven  tex mex inspired\n"
     },
     {
       "slug": "dinner-veganes-gulasch-mit-pfannenknoedeln-und-rotkraut",
