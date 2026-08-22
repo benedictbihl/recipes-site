@@ -1,6 +1,6 @@
 {
   "generatedAt": "build-time",
-  "recipeCount": 18,
+  "recipeCount": 19,
   "categories": [
     "breakfast",
     "dinner",
@@ -9,8 +9,10 @@
   ],
   "tags": [
     "aubergine",
+    "auflauf",
     "beans",
     "bergkaese",
+    "billie-green",
     "bohnen",
     "bolognese",
     "bonappetit",
@@ -23,6 +25,7 @@
     "comfort-food",
     "custom",
     "falafel",
+    "familienessen",
     "feta",
     "gefuellt",
     "gemuesepfanne",
@@ -45,8 +48,10 @@
     "meal-prep",
     "mediterranean",
     "mushrooms",
+    "nudeln",
     "nudelsalat",
     "ofen",
+    "ofengericht",
     "orecchiette",
     "orzo",
     "oven",
@@ -61,6 +66,7 @@
     "risotto-ish",
     "rotkraut",
     "salad",
+    "schinkenwuerfel",
     "schmorgericht",
     "schwäbisch",
     "smoky",
@@ -95,6 +101,29 @@
       "sourcePath": "recipes/breakfast/buttermilk-pancakes.md",
       "html": "<p><strong>Category:</strong> breakfast</p>\n<p><strong>Cuisine:</strong> American</p>\n<p><strong>Prep time:</strong> 10 min</p>\n<p><strong>Cook time:</strong> 15 min</p>\n<p><strong>Serves:</strong> 2 people</p>\n<p><strong>Diet:</strong> Vegetarian 🌱</p>\n<p><em>Fluffige amerikanische Pancakes mit Buttermilch – außen goldbraun, innen zart und luftig.</em></p>\n<h3>Ingredients</h3>\n<ul>\n<li>120 g Mehl Type 405</li>\n<li>1 EL Zucker</li>\n<li>1 TL Backpulver</li>\n<li>1/4 TL Natron</li>\n<li>1/4 TL Salz</li>\n<li>240 ml Buttermilch</li>\n<li>1 Ei (L)</li>\n<li>30 g Butter, geschmolzen</li>\n<li>1/2 TL Vanilleextrakt</li>\n<li>Butter oder neutrales Öl zum Ausbacken</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li>Mehl, Zucker, Backpulver, Natron und Salz in einer großen Schüssel vermengen und in der Mitte eine Mulde formen.</li>\n<li>Buttermilch, Ei, geschmolzene Butter und Vanilleextrakt in einem Messbecher gut verquirlen.</li>\n<li>Die nassen Zutaten in die Mulde gießen und nur kurz unterheben. Der Teig darf klumpig bleiben; nicht zu lange rühren, sonst werden die Pancakes zäh. 5 Minuten ruhen lassen.</li>\n<li>Eine beschichtete Pfanne bei mittlerer Hitze erhitzen. Etwas Butter oder neutrales Öl hineingeben und verteilen.</li>\n<li>Pro Pancake ca. 60–80 ml Teig in die Pfanne geben. 2–3 Minuten backen, bis die Oberfläche Blasen bildet und die Ränder matt aussehen.</li>\n<li>Wenden und weitere 1–2 Minuten goldbraun fertigbacken.</li>\n<li>Fertige Pancakes optional bei 80 °C im Ofen warm halten. Mit Ahornsirup, frischen Beeren oder Butter servieren.</li>\n</ol>\n<h3>Notes</h3>\n<ul>\n<li>Teig nicht überrühren — Klümpchen sind okay und machen die Pancakes fluffiger.</li>\n<li>Für extra Luftigkeit: Ei trennen, Eiweiß steif schlagen und am Ende vorsichtig unterheben.</li>\n<li>Die erste Pancake wird oft nicht perfekt — die kalibriert die Pfanne.</li>\n</ul>\n<h3>Tags</h3>\n<p>#pancakes #breakfast #vegetarian #buttermilk</p>",
       "searchText": "buttermilk pancakes breakfast american vegetarian 🌱 breakfast buttermilk pancakes vegetarian   buttermilk pancakes\n\n category:  breakfast\n cuisine:  american\n prep time:  10 min\n cook time:  15 min\n serves:  2 people\n diet:  vegetarian 🌱\n\n fluffige amerikanische pancakes mit buttermilch – außen goldbraun, innen zart und luftig. \n\n  ingredients\n\n      120 g mehl type 405\n      1 el zucker\n      1 tl backpulver\n      1/4 tl natron\n      1/4 tl salz\n      240 ml buttermilch\n      1 ei  l \n      30 g butter, geschmolzen\n      1/2 tl vanilleextrakt\n      butter oder neutrales öl zum ausbacken\n\n  instructions\n\n1. mehl, zucker, backpulver, natron und salz in einer großen schüssel vermengen und in der mitte eine mulde formen.\n2. buttermilch, ei, geschmolzene butter und vanilleextrakt in einem messbecher gut verquirlen.\n3. die nassen zutaten in die mulde gießen und nur kurz unterheben. der teig darf klumpig bleiben; nicht zu lange rühren, sonst werden die pancakes zäh. 5 minuten ruhen lassen.\n4. eine beschichtete pfanne bei mittlerer hitze erhitzen. etwas butter oder neutrales öl hineingeben und verteilen.\n5. pro pancake ca. 60–80 ml teig in die pfanne geben. 2–3 minuten backen, bis die oberfläche blasen bildet und die ränder matt aussehen.\n6. wenden und weitere 1–2 minuten goldbraun fertigbacken.\n7. fertige pancakes optional bei 80 °c im ofen warm halten. mit ahornsirup, frischen beeren oder butter servieren.\n\n  notes\n\n  teig nicht überrühren — klümpchen sind okay und machen die pancakes fluffiger.\n  für extra luftigkeit: ei trennen, eiweiß steif schlagen und am ende vorsichtig unterheben.\n  die erste pancake wird oft nicht perfekt — die kalibriert die pfanne.\n\n  tags\n\n pancakes  breakfast  vegetarian  buttermilk\n"
+    },
+    {
+      "slug": "dinner-brokkoli-nudelauflauf-mit-veggie-schinken-nuggets",
+      "title": "Brokkoli-Nudelauflauf mit veganen Schinkenwürfeln",
+      "category": "dinner",
+      "cuisine": "German-inspired",
+      "prepTime": "25 min",
+      "cookTime": "25 min",
+      "serves": "4 people",
+      "diet": "Vegetarian 🌱",
+      "tags": [
+        "auflauf",
+        "billie-green",
+        "brokkoli",
+        "familienessen",
+        "nudeln",
+        "ofengericht",
+        "schinkenwuerfel",
+        "vegetarian"
+      ],
+      "sourcePath": "recipes/dinner/brokkoli-nudelauflauf-mit-veggie-schinken-nuggets.md",
+      "html": "<p><strong>Category:</strong> dinner</p>\n<p><strong>Cuisine:</strong> German-inspired</p>\n<p><strong>Prep time:</strong> 25 min</p>\n<p><strong>Cook time:</strong> 25 min</p>\n<p><strong>Serves:</strong> 4 people</p>\n<p><strong>Diet:</strong> Vegetarian 🌱</p>\n<p><strong>Source:</strong> Ernährungsrat Münster e.V. — https://www.ernaehrungsrat-muenster.de/mitmachen/brokkoli-nudelauflauf/</p>\n<p><em>Cremiger Nudelauflauf mit Brokkoli, Gouda und veganen Schinkenwürfeln.</em></p>\n<h3>Ingredients</h3>\n<ul>\n<li>500 g Brokkoli</li>\n<li>400 g Hörnchennudeln oder Makkaroni</li>\n<li>1 Packung Billie Green Schinkenwürfel vegan (ca. 150 g)</li>\n<li>1 Zwiebel</li>\n<li>1 Knoblauchzehe</li>\n<li>30 g Butter</li>\n<li>30 g Mehl (Type 405)</li>\n<li>300 ml Gemüsebrühe</li>\n<li>200 ml Sahne</li>\n<li>150 g Gouda, gerieben</li>\n<li>Salz</li>\n<li>schwarzer Pfeffer</li>\n<li>frisch geriebene Muskatnuss</li>\n</ul>\n<h3>Instructions</h3>\n<ol>\n<li>Backofen auf 180 °C Ober-/Unterhitze vorheizen. Eine Auflaufform mit etwas Butter einfetten.</li>\n<li>Nudeln in Salzwasser knapp bissfest kochen, abgießen und kurz abschrecken.</li>\n<li>Brokkoli waschen, in Röschen teilen und 2 Minuten in kochendem Salzwasser vorgaren. TK-Brokkoli nach Packungsangabe vorbereiten.</li>\n<li>Zwiebel und Knoblauch fein würfeln. Die veganen Schinkenwürfel nach Packungsangabe kurz anbraten, damit sie etwas Röstaroma bekommen.</li>\n<li>Butter in einem Topf zerlassen. Zwiebel und Knoblauch darin 2–3 Minuten glasig dünsten, Mehl zugeben und kurz anschwitzen.</li>\n<li>Kalte Gemüsebrühe nach und nach einrühren. Unter Rühren 1–2 Minuten köcheln lassen, Sahne und etwa ein Drittel des Goudas einrühren. Mit Salz, Pfeffer und Muskat abschmecken.</li>\n<li>Nudeln, Brokkoli und die veganen Schinkenwürfel in der Auflaufform vermengen. Sauce darüber verteilen und mit dem restlichen Käse bestreuen.</li>\n<li>Etwa 25 Minuten backen, bis der Käse goldgelb ist. Kurz stehen lassen und servieren.</li>\n</ol>\n<h3>Notes</h3>\n<ul>\n<li>Die Billie Green Schinkenwürfel sind die vegetarische Ergänzung zum Originalrezept und können direkt mit Nudeln und Brokkoli in die Form.</li>\n<li>Für eine etwas leichtere Variante funktioniert Kochsahne gut.</li>\n<li>Passt gut mit einem grünen Salat.</li>\n</ul>\n<h3>Tags</h3>\n<p>#auflauf #nudeln #brokkoli #schinkenwuerfel #billie-green #vegetarian #ofengericht #familienessen</p>",
+      "searchText": "brokkoli-nudelauflauf mit veganen schinkenwürfeln dinner german-inspired vegetarian 🌱 auflauf billie-green brokkoli familienessen nudeln ofengericht schinkenwuerfel vegetarian   brokkoli nudelauflauf mit veganen schinkenwürfeln\n\n category:  dinner\n cuisine:  german inspired\n prep time:  25 min\n cook time:  25 min\n serves:  4 people\n diet:  vegetarian 🌱\n source:  ernährungsrat münster e.v. — https://www.ernaehrungsrat muenster.de/mitmachen/brokkoli nudelauflauf/\n\n cremiger nudelauflauf mit brokkoli, gouda und veganen schinkenwürfeln. \n\n  ingredients\n\n      500 g brokkoli\n      400 g hörnchennudeln oder makkaroni\n      1 packung billie green schinkenwürfel vegan  ca. 150 g \n      1 zwiebel\n      1 knoblauchzehe\n      30 g butter\n      30 g mehl  type 405 \n      300 ml gemüsebrühe\n      200 ml sahne\n      150 g gouda, gerieben\n      salz\n      schwarzer pfeffer\n      frisch geriebene muskatnuss\n\n  instructions\n\n1. backofen auf 180 °c ober /unterhitze vorheizen. eine auflaufform mit etwas butter einfetten.\n2. nudeln in salzwasser knapp bissfest kochen, abgießen und kurz abschrecken.\n3. brokkoli waschen, in röschen teilen und 2 minuten in kochendem salzwasser vorgaren. tk brokkoli nach packungsangabe vorbereiten.\n4. zwiebel und knoblauch fein würfeln. die veganen schinkenwürfel nach packungsangabe kurz anbraten, damit sie etwas röstaroma bekommen.\n5. butter in einem topf zerlassen. zwiebel und knoblauch darin 2–3 minuten glasig dünsten, mehl zugeben und kurz anschwitzen.\n6. kalte gemüsebrühe nach und nach einrühren. unter rühren 1–2 minuten köcheln lassen, sahne und etwa ein drittel des goudas einrühren. mit salz, pfeffer und muskat abschmecken.\n7. nudeln, brokkoli und die veganen schinkenwürfel in der auflaufform vermengen. sauce darüber verteilen und mit dem restlichen käse bestreuen.\n8. etwa 25 minuten backen, bis der käse goldgelb ist. kurz stehen lassen und servieren.\n\n  notes\n\n  die billie green schinkenwürfel sind die vegetarische ergänzung zum originalrezept und können direkt mit nudeln und brokkoli in die form.\n  für eine etwas leichtere variante funktioniert kochsahne gut.\n  passt gut mit einem grünen salat.\n\n  tags\n\n auflauf  nudeln  brokkoli  schinkenwuerfel  billie green  vegetarian  ofengericht  familienessen\n"
     },
     {
       "slug": "dinner-falafel-halloumi-bowl-mit-gemuese-und-kraeuterquark",
